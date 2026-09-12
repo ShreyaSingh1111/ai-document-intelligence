@@ -1,10 +1,10 @@
 ﻿from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.api.routes.documents import router as document_router
 from app.core.database import Base, engine
 
-# Import models so SQLAlchemy knows about them
 from app.models.document import Document
 
 
@@ -34,3 +34,5 @@ def health_check():
 
 
 app.include_router(document_router)
+
+app.mount("/", StaticFiles(directory="../frontend/templates", html=True), name="frontend")
