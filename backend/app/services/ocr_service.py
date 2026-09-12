@@ -1,10 +1,12 @@
-﻿from pathlib import Path
+﻿import platform
+from pathlib import Path
 
 import fitz
 from PIL import Image
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+if platform.system() == "Windows":
+    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
 def _ocr_pdf_page(page) -> str:
