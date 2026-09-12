@@ -55,10 +55,10 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ## 5. Deployed URLs
 
-- Frontend: TBD
-- Backend API: TBD
-- Swagger/OpenAPI: TBD
-- GitHub repository: TBD
+- Frontend: https://ai-document-intelligence-bg01.onrender.com
+- Backend API: https://ai-document-intelligence-bg01.onrender.com
+- Swagger/OpenAPI: https://ai-document-intelligence-bg01.onrender.com/docs
+- GitHub repository: https://github.com/ShreyaSingh1111/ai-document-intelligence
 
 ## 6. API Examples
 
